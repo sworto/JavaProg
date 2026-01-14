@@ -9,7 +9,7 @@ class SavingsAccount{
 	}
 	void CalculateIntrate(float time)
 	{
-		System.out.println("Total Interest: "+(Bal*(Intrate/100)*time));
+		System.out.println("Total Interest: "+(Bal*(IntRate/100)*time));
 	}
 }
 class calculatesystem{
@@ -20,7 +20,7 @@ class calculatesystem{
 		s1.Bal=10034;
 		s1.Name="Shivam Dubey";
 		s1.CalculateIntrate(2);
-		SavingsAccount.ModifyIntrate(4.5);
+		SavingsAccount.ModifyIntrate(4.5f);
 		s1.CalculateIntrate(2);
 	}
 }
