@@ -1,6 +1,6 @@
 import java.util.Random;
 class matrixdiasum{
-	public static void main(){
+	public static void main(String[] args){
 		int[][] matrix=new int[3][3];
 		Random rand= new Random();
 		System.out.println("Matrix:");

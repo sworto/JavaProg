@@ -2,10 +2,6 @@ class employee{
 	int DeptID;
 	int EmpID;
 	int compensation=600;
-	employee()
-	{
-		System.out.println("Category Employee: ");
-	}
 	void leavecalculate(int days)
 	{
 		System.out.println("Compensation: "+compensation*days);
@@ -30,6 +26,7 @@ class worker extends employee{
 class leavesystem{
 	public static void main(String[] args)
 	{
+		System.out.println("Default Compensation: ");
 		int days=Integer.parseInt(args[0]);
 		employee e1=new employee();
 		e1.leavecalculate(days);
