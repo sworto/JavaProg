@@ -1,7 +1,5 @@
 abstract class shape{
-	void CalculateArea(){
-		System.out.println("Area Calculation.");
-	}
+	abstract void CalculateArea(int l, int b);
 }
 class triangle extends shape{
 	void CalculateArea(int base, int height){
@@ -9,7 +7,7 @@ class triangle extends shape{
 	}
 }
 class rectangle extends shape{
-	void CalculateArea(int length, int breadth){
+	 void CalculateArea(int length, int breadth){
 		System.out.println("Area rectangle: "+length*breadth);
 	}
 }
