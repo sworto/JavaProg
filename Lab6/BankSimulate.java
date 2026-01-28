@@ -18,7 +18,7 @@ class Bank{
 		System.out.println("Account closed for: "+Name);
 	}
 }
-class HDFC extends Bank implements operation{
+class HDFC extends Bank{
 	public void deposit(float amount){
 		System.out.println("Added the amount: "+amount+" to the bank account.");
 	}
