@@ -10,12 +10,8 @@ class Calculator{
 			System.out.println("The division of "+p+" and "+q+" is: "+p/q);
 		}
 		catch(ArithmeticException e){
-			System.out.println("Exception Found: denominator is 0. Retry!!");
-			System.out.println("Enter the first number");
-			p= read.nextInt();
-			System.out.println("Enter the second number");
-			q= read.nextInt();
-			System.out.println("The division of "+p+" and "+q+" is: "+p/q);
+			System.out.println("Careful!! Division by 0 is not permissible!!");
+			Calculator.main(null);
 
 		}
 	}
