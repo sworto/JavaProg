@@ -13,6 +13,12 @@ class thread1 extends Thread{
 	public void run(){
 		for(int i=n;i<=m;i++){
 			System.out.println(i);
+			try{
+				Thread.sleep(5);
+			}
+			catch(InterruptedException e){
+				
+			}
 		}
 		return;
 	}
